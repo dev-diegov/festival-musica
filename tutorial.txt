@@ -1,0 +1,34 @@
+Iniciar proyecto con npm init y darle ENTER a todas las opciones hasta crear package.json
+
+Instalar SASS:
+
+npm install sass --save-dev (para instalar dependencia en modo producción)
+
+Instalar extensión live sass compiler
+
+Definir variables con $
+
+Editar package.json
+
+  "scripts": {
+    "sass": "sass src/scss:build/css"
+  },
+
+para indicar donde cargar css y luego en terminal npm run sass para cargar dicho script
+
+Para actualizar cambios de app.scss debo darle a npm run sass. Para actualizar cambios automaticamente editar en package.json 
+y agregar --watch 
+
+
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+
+luego darle a npm run sass y los cambios se actualizaran
+
+Para instalar gulp escribir en terminal npm install -g gulp para instalar de forma global.
+También instalar de forma local con npm install --save-dev gulp (esto lo agrega a package.json)
+Crear archivo gulpfile.js en root/raiz/directorio
+Para ejecutar una tarea desde gulpfile, escribir comando gulp nuevatarea (ó nombre de la función)
+
+Para iniciar compilando sass con gulp instalar npm install --save-dev gulp-sass
