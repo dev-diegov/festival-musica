@@ -32,3 +32,7 @@ Crear archivo gulpfile.js en root/raiz/directorio
 Para ejecutar una tarea desde gulpfile, escribir comando gulp nuevatarea (ó nombre de la función)
 
 Para iniciar compilando sass con gulp instalar npm install --save-dev gulp-sass
+
+@forward apunta donde están los archivos y @use los compila
+
+Al instalar la dependencia plumber podemos ejecutar un programa con errores sin que detenga la consola

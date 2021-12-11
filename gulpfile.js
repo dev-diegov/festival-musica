@@ -2,11 +2,13 @@
 
 const { src, dest, watch} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const plumber = require('gulp-plumber');
 
 function css(done){
 
     // identificar el archivo .SCSS a compilar.
-    src('src/scss/app.scss')
+    src('src/scss/**/*.scss')
+        .pipe(plumber())
         .pipe( sass ()) //Compilarlo
         .pipe( dest('build/css') ) //Almacenar en disco duro
 
@@ -15,7 +17,7 @@ function css(done){
 
 function dev(done){
 
-    watch('src/scss/app.scss', css); //watch manda a cambiar la tarea de css (función de arriba) actualizando automaticamente los cambios de estilos
+    watch('src/scss/**/*.scss', css); //watch manda a cambiar la tarea de css (función de arriba) actualizando automaticamente los cambios de estilos
     done();
 }
 

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dev-diegov/festival-musica#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.0.0",
     "sass": "^1.44.0"
   },
