@@ -2,7 +2,7 @@
 @use 'base/mixins';
 
 .sobre-festival{
-    column-gap: 2rem;
+    column-gap: 5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 5rem 0;
@@ -13,9 +13,10 @@
     flex-direction: column;
     justify-content: center;
     h2{
-
+        margin-bottom: 2rem;
     }
     .fecha{
-
+        color: variables.$rosa;
+        font-weight: 700;
     }
 }
