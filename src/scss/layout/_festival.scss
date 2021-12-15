@@ -2,10 +2,11 @@
 @use 'base/mixins';
 
 .sobre-festival{
-    column-gap: 5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     padding: 5rem 0;
+    @include mixins.tablet{
+        @include mixins.grid(2);
+    }
 }
 
 .contenido-festival{
